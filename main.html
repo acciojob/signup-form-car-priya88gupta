@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Signup Form</title>
 </head>
-
 <body>
-	<form method="post">
-		<label for="Name">Name</label>
-		<input type="text" required="yes" id="name" placeholder="name"/>
-	<label for="Email">Email</label>
-		<input type="Email"required="yes" id="email" placeholder="email"/><br><br>
-		<label>Gender:</label><br>
-		<input type="radio" id="gender_m" name="gender" required>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="gender_m" name="gender" required>
         <label for="gender_m">Male</label><br>
         <input type="radio" id="gender_f" name="gender" required>
         <label for="gender_f">Female</label><br><br>
-		<input type="radio"required="yes" id="gender male, gender female"/>
-		<label for="cars">Car Brands:</label>
+
+        <label for="cars">Car Brands:</label>
         <select id="cars" name="cars" required>
-        <option value="" disabled>--Please choose an option--</option>
-           <option>XUV</option>
+            <option value="" disabled>--Please choose an option--</option>
+            <option>XUV</option>
 			<option>ALTO</option>
 			<option>i20</option>
 			<option>Baleno</option>
         </select><br><br>
-		<label for="age">Age</label>
-		<input type="number"required="yes" id="age" placeholder="age"/><br><br>
-		<label for="DOB">DOB</label>
-		<input type="date"required="yes" id="dob" placeholder="-"/><br><br>
-		<label for="phone number">Phone Number</label>
-		<input type="tel"required="no" id="tel" placeholder="xxx-xxx-xxxx"/><br><br>
-		<label for="password">Password</label>
-		<input type="password"required="yes" id="password" placeholder="password"/><br><br>
-		<label for="I agree to the TOS">I agree to the TOS</label>
-		<input type="checkbox"required="yes" id="TOS" placeholder="-"/>
-	</form><br>
-	<button type="submit">submit</button>
 
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Age" required><br><br>
+
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="tel">Phone Number:</label>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+
+        <input type="checkbox" id="tos" name="tos" required>
+        <label for="tos">I agree to the TOS</label><br><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
 </body>
-
 </html>
